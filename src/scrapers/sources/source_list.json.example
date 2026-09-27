@@ -1,0 +1,13 @@
+[
+	{
+		"name": "Collectors.com",
+		"url": [
+			{
+				"base": "https://www.collectors.com",
+				"robots": "https://www.collectors.com/robots.txt",
+				"sitemap": "https://www.collectors.com/sitemap-index.xml",
+				"search": "https://www.collectors.com/Search"
+			}
+		]
+	}
+]
