@@ -6,7 +6,7 @@ class JSONParser:
     def __init__(self: JSONParser) -> None:
         self._content: list[dict[str, object]] = []
     
-    def parse_from_file(self: JSONParser, filepath: Path) -> list[dict[str, object]]:
+    def parse_from_file(self: JSONParser, filepath: Path) -> list[dict]:
         if not filepath.exists():
             raise FileNotFoundError(f"The file {filepath} does not exist.")
         
