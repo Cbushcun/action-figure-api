@@ -1,9 +1,5 @@
-import os
-
-from dotenv import load_dotenv
-from src.parsers.json_parser import JSONObject
+import src.config as config
 
 if __name__ == "__main__":
-    load_dotenv()
-    sources: JSONObject = JSONObject(filepath=os.getenv("SOURCES_JSON"))
-    print(type(sources.data[0]))
+    print(f"Log level is set to: {config.LOG_LEVEL}")
+    print(f"Scraper sources JSON path is set to: {config.SCRAPER_SOURCES_JSON}")
