@@ -26,3 +26,6 @@ class JSONObject:
     def validate_json(self: JSONObject, schema): # Returns a boolean
         # TODO: Implement JSON validation logic
         pass
+    
+class JSONParser:
+    pass

@@ -1,5 +1,8 @@
 from bs4 import BeautifulSoup
 
+class HTMLObject:
+    pass
+
 class HTMLParser:
     def __init__(self: HTMLParser, html_content: str) -> None:
         self.soup = BeautifulSoup(html_content, 'html.parser')

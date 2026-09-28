@@ -1,4 +1,4 @@
-import src.Config as Config
+import src.config as Config
 
 if __name__ == "__main__":
     print(f"Log level is set to: {Config.LOG_LEVEL}")
