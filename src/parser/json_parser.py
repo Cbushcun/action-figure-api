@@ -3,8 +3,7 @@ import json
 from pathlib import Path
 
 class JSONObject:
-    def __init__(self: JSONObject, data: list = [], filepath: Path | None = None) -> None:
-        self.data: list[dict] = []
+    def __init__(self: JSONObject, data: list[dict] = [], filepath: Path | None = None) -> None:
         
         if filepath:
             self.data = self.load_json_from_file(filepath)
