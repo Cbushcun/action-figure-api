@@ -1,6 +1,6 @@
 import os
 
-from src.parser.json_parser import JSONObject
+from src.parser.json_parser import JSONParser
 
 from pathlib import Path
 from dotenv import load_dotenv
@@ -12,4 +12,4 @@ LOG_LEVEL = os.getenv("LOG_LEVEL", "DEBUG")
 
 # Scraper settings
 SCRAPER_SOURCES_JSON: Path = Path(os.getenv("SOURCES_JSON", "src/scraper/source_list.json"))
-SCRAPER_SOURCES = JSONObject(filepath=SCRAPER_SOURCES_JSON).data
+SCRAPER_SOURCES = JSONParser().parse_from_file(filepath=SCRAPER_SOURCES_JSON)
