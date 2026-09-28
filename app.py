@@ -1,5 +1,7 @@
-import src.config as config
+from src.scraper import Scraper
+from src.config import SCRAPER_SOURCES
+
+import requests
 
 if __name__ == "__main__":
-    print(f"Log level is set to: {config.LOG_LEVEL}")
-    print(f"Scraper sources data is: {config.SCRAPER_SOURCES}")
+    pass

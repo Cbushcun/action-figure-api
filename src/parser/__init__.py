@@ -1,9 +1,12 @@
 __all__ = [
-    "html_parser",
-    "json_parser"
+    "HTMLParser",
+    "JSONParser"
     ]
 
-from . import (
-    html_parser,
-    json_parser
-    )
+from .html_parser import (
+    HTMLParser
+)
+
+from .json_parser import (
+    JSONParser
+)

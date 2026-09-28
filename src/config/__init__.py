@@ -1,6 +1,6 @@
 from .settings import(
     LOG_LEVEL,
-    SCRAPER_SOURCES,
+    SCRAPER_SOURCES
 )
 
 __all__ = [
