@@ -3,29 +3,23 @@ import json
 from pathlib import Path
 
 class JSONObject:
-    def __init__(self: JSONObject, data: list[dict] = [], filepath: Path | None = None) -> None:
-        
-        if filepath:
-            self.data = self.load_json_from_file(filepath)
-            return
-        
-        self.data = data
+    def __init__(self: JSONObject) -> None:
+        pass
     
-    def load_json_from_file(self: JSONObject, filepath: Path | None = None):
-        if not filepath:
-            raise ValueError("Filepath must be provided to load JSON from a file.")
-        elif not filepath.exists():
+        
+    
+class JSONParser:
+    def __init__(self: JSONParser) -> None:
+        pass
+    
+    def parse_from_file(self: JSONParser, filepath: Path) -> None:
+        if not filepath.exists():
             raise FileNotFoundError(f"The file {filepath} does not exist.")
         
         try:
             with open(filepath, 'r') as file:
-                return json.load(file)
+                content: list[dict[str, object]] = json.load(file)
         except json.JSONDecodeError as e:
-            raise ValueError(f"Error decoding JSON from file {filepath}: {e}")
+            raise ValueError(f"Error decoding JSON from file {filepath}: {e}")    
         
-    def validate_json(self: JSONObject, schema): # Returns a boolean
-        # TODO: Implement JSON validation logic
         pass
-    
-class JSONParser:
-    pass
