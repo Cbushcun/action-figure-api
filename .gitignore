@@ -1,6 +1,7 @@
 # User-defined exclusions
 source_list.json
 src/scraper/pages/
+uninstall.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
