@@ -1,6 +1,6 @@
 import os
 
-from src.parsers.json_parser import JSONObject
+from src.parser.json_parser import JSONObject
 
 from pathlib import Path
 from dotenv import load_dotenv
