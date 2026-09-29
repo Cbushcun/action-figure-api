@@ -1,6 +1,6 @@
 import os
 
-from src.parser.json_manager import JSONManager
+from src.util.json_manager import JSONManager
 from dotenv import load_dotenv
 
 

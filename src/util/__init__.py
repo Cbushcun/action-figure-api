@@ -1,10 +1,10 @@
 __all__ = [
-    "HTMLParser",
+    "HTMLPage",
     "JSONManager"
     ]
 
 from .html_parser import (
-    HTMLParser
+    HTMLPage
 )
 
 from .json_manager import (
