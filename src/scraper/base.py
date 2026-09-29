@@ -19,7 +19,7 @@ class Scraper:
         if not self._base_url:
             raise ValueError("`base_url` is required to use `Scraper` object.")
         
-    def scrape(self, url):
+    def scrape(self, url: str):
         self._validate_config()
         payload = {
             "url": url,

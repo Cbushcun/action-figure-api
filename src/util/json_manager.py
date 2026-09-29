@@ -1,7 +1,5 @@
 import json
 
-from pathlib import Path
-
 class JSONManager:
     "Project-specific JSON management class for centralized handling."
     def __init__(self: JSONManager) -> None:
